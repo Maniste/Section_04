@@ -2678,7 +2678,22 @@ else
 
 ### Programmatic Sideways Friction
 
-- **Objective**:
+- **Objective**: Prevent tank from sliding sideways
+
+1. `Track.cpp`
+
+- Calculate slippage speed
+- Work out the required acceleration this frame to correct
+- Calculate and apply sideways for (F=ma)
+
+- Calculate slippage speed
+	+ The component of speed in the tank right direction
+	+ If no slippage should be zero
+	+ If sliding sideways should be speed
+	+ In general use cos of the angle between velocity and the sideways vector
+	+ FVecotor::DotProduct()
+
+
 
 ### OnComponentHit Event in 4.12
 
