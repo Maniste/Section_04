@@ -2760,7 +2760,17 @@ UFUNCTION()
 
 ### Improving Tank Aiming
 
-- **Objective**:
+- **Objective**: No more barrels pointing the wrong way round
+
+[`printf` cplusplus documentation](http://www.cplusplus.com/reference/cstdio/printf/)
+
+- Disable Auto Possess AI on the tanks
+
+![](Tank_Disable_AutoPosess.png)
+
+[Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/d06b8d1121c52f35f14d05afb9fcab3fd75db8cc)
+
+[Lecture Project Changes]()
 
 ### Tweaking Tank AI
 
