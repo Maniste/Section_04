@@ -2732,9 +2732,29 @@ UFUNCTION()
 
 ![Component Hit Event in BP](BattleTank/Saved/Screenshots/Windows/OnComponentHitEvent_Collisions.png)
 
+[Lecture Project Changes](https://github.com/UnrealDeveloperCourse/Section_04/commit/35861a81f910fb150cbc51ceb9b5b539dbb5107d)
+
 ### Avoiding Boolean Flags
 
-- **Objective**:
+- **Objective**: Get the physics of the tank to apply only when the tank is in contact with the ground. Have the tank move much more like a tank.
+
+- Select the Tank Component
+
+![](BattleTank/Saved/Screenshots/Windows/Tank_BP_Select_Tank_Component.png)
+
+- Check the collision settings are correct
+
+![](BattleTank/Saved/Screenshots/Windows/Tank_BP_CollisionSettings.png)
+
+- Set Damping to make enable deceleration and to mellow the tank rotation while it is not in contact with the ground.
+
+![Damping Settings](BattleTank/Saved/Screenshots/Windows/Tank_BP_Physics_Settings_Damping.png)
+
+[Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/fa5baeb68120e5ce78d214e36cde61643b00e43c)
+
+- Differences in my code: Did not remove `TickComponent` and did not extract `DriveTrack` into separate function. If not, tank would not move predictably or turn very well.
+
+[My Lecture Project Changes](https://github.com/UnrealDeveloperCourse/Section_04/commit/35861a81f910fb150cbc51ceb9b5b539dbb5107d)
 
 ## Mid-Section Quiz
 
