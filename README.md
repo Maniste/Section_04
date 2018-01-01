@@ -2693,11 +2693,44 @@ else
 	+ In general use cos of the angle between velocity and the sideways vector
 	+ FVecotor::DotProduct()
 
-
+[Lecture Project Changes](https://github.com/UnrealDeveloperCourse/Section_04/commit/ae096eec645d5188407ce41dae209d27ba5b517e)
 
 ### OnComponentHit Event in 4.12
 
-- **Objective**:
+- **Objective**: Detect Component Hit Events
+
+- Tank_BP > Event Graph > Details > Events
+
+![Hit Event Create in BP](BattleTank/Saved/Screenshots/Windows/OnComponentHitEvent_Create.png)
+
+- Replacing the contents of this Blueprint with C++
+
+![Component Hit Event in BP](BattleTank/Saved/Screenshots/Windows/OnComponentHitEvent.png)
+
+1. Register delegate at `BeginPlay`
+
+```cpp
+OnComponentHit.AddDynamic(this, &UTankTrack::OnHit);
+```
+
+2. Use this signature found in the Engine source code for the delegate
+
+```cpp
+UFUNCTION()
+	void OnHit(
+		UPrimitiveComponent* HitComponent,
+		AActor* OtherActor,
+		UPrimitiveComponent* OtherComponent,
+		FVector NormalImpulse,
+		const FHitResult& Hit
+);
+```
+
+3. Make `OnHit()` a private `UFUNCTION`
+
+4. Check "Simulation Generates Hit Events"
+
+![Component Hit Event in BP](BattleTank/Saved/Screenshots/Windows/OnComponentHitEvent_Collisions.png)
 
 ### Avoiding Boolean Flags
 
