@@ -2814,6 +2814,7 @@ UFUNCTION()
 
 [Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/65346fc7e3ae644bf934877624cde6fa3df34635)
 
+
 [My Project Changes](https://github.com/UnrealDeveloperCourse/Section_04/commit/b9ecd1630cd175ff7285ea145954da1e838eb1a0)
 
 ### Making an AutoMortar
@@ -2832,11 +2833,15 @@ UFUNCTION()
 
 ### Using the Reference Viewer
 
-- **Objective**:
+- **Objective**: Remove Starter Content
 
 ### Preparing for Particles
 
-- **Objective**:
+- **Objective**: Getting Set Up to use particles
+
+[Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/23a580e68a61042829aefc9986feb4f1d6f8178e)
+
+[My Project Changes]()
 
 ### Introducing Particle Systems
 
