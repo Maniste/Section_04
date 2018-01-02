@@ -2814,11 +2814,21 @@ UFUNCTION()
 
 [Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/65346fc7e3ae644bf934877624cde6fa3df34635)
 
-[My Project Changes]()
+[My Project Changes](https://github.com/UnrealDeveloperCourse/Section_04/commit/b9ecd1630cd175ff7285ea145954da1e838eb1a0)
 
 ### Making an AutoMortar
 
-- **Objective**:
+- **Objective**: Reusing AimingComponent to create a stationary mortar entirely in Unreal, no coding.
+
+![Mortar BP Class](Mortar_BP_Class.png)
+
+![Mortar BP Geo](Mortar_BP_Geo.png)
+
+![Mortart BP Components](Mortar_BP_Components.png)
+
+![Mortar Event Graph](Mortar_BP_EventGraph.png)
+
+![Mortar Projectile BP](Mortar_BP_Projectile_BP.png)
 
 ### Using the Reference Viewer
 
