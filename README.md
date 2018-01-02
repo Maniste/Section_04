@@ -2100,6 +2100,8 @@ void UTankMovementComponent::RequestDirectMove(const FVector & MoveVelocity, boo
 
 ![Aiming Component Architecture](BattleTank/Saved/Screenshots/Windows/PlayerUI_BP_AimingComponent_Architecture.png)
 
+![Tank Aiming Component Diagram](BattleTank/Saved/Screenshots/Windows/PlayerUI_BP_AimingComponent_Diagram.png)
+
 ***1. Make `GetControlledTank()` `BlueprintCallable` and in the protected section of the class code so that it is accessible to other objects***
 
 ```cpp
@@ -2123,7 +2125,11 @@ protected:
 
 ***2. Create a variable on `PlayerUI_BP` that is of type `TankAimingComponent`***
 
-![Tank Aiming Component Diagram](BattleTank/Saved/Screenshots/Windows/PlayerUI_BP_AimingComponent_Diagram.png)
+![Tank Aiming Component BP Variable](BattleTank/Saved/Screenshots/Windows/PlayerUI_BP_AimingComponent_BP_Variable_01.png)
+
+![Tank Aiming Component BP Variable](BattleTank/Saved/Screenshots/Windows/PlayerUI_BP_AimingComponent_BP_Variable_02.png)
+
+![Tank Aiming Component BP Variable](BattleTank/Saved/Screenshots/Windows/PlayerUI_BP_AimingComponent_BP_Variable_03.png)
 
 - After saving and compiling the PlayerUI_BP the Set BP Aiming Comp Reference node will be available
 
@@ -2754,7 +2760,7 @@ UFUNCTION()
 
 - Differences in my code: Did not remove `TickComponent` and did not extract `DriveTrack` into separate function. If not, tank would not move predictably or turn very well.
 
-[My Lecture Project Changes](https://github.com/UnrealDeveloperCourse/Section_04/commit/35861a81f910fb150cbc51ceb9b5b539dbb5107d)
+[My Project Changes](https://github.com/UnrealDeveloperCourse/Section_04/commit/35861a81f910fb150cbc51ceb9b5b539dbb5107d)
 
 ## Mid-Section Quiz
 
@@ -2766,19 +2772,49 @@ UFUNCTION()
 
 - Disable Auto Possess AI on the tanks
 
-![](Tank_Disable_AutoPosess.png)
+![Disable AI Auto Possess](BattleTank/Saved/Screenshots/Windows/Tank_Disable_AutoPosess.png)
 
 [Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/d06b8d1121c52f35f14d05afb9fcab3fd75db8cc)
 
-[Lecture Project Changes]()
+[My Project Changes](https://github.com/UnrealDeveloperCourse/Section_04/commit/a54b64ee547e76e400a647f7902d8c29c2d65a04)
 
 ### Tweaking Tank AI
 
-- **Objective**:
+- **Objective**: Prevent tanks from firing until they are locked. Increase the max distance between the player tank and AI tanks
+
+**Part 1: `GetFiringState`**
+
+1. Create a getter in the `TankAimingComponent` class to return the `FiringState`
+
+2. Use it to limit the firing of AI tanks to only be when the aiming status is locked
+
+**Part 2: `AcceptanceRadius`**
+
+1. Make a blueprint of the `TankAIController` class
+
+2. Expose `AcceptanceRadius` as `EditAnywhere` for now so that we can test values
+
+3. Code the default `AcceptanceRadius`
+
+[Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/cc8b71240db51bdcadc2fe6d5e7d555be985eaa4)
+
+[My Lecture Project Changes](https://github.com/UnrealDeveloperCourse/Section_04/commit/ba54678ef8cf3107d225183e10d9f9f4c2dcabc3)
 
 ### Making an Ammo Display
 
-- **Objective**:
+- **Objective**: Make a UI for ammo count
+
+1. Create text object in `PlayerUI_BP` and anchor it
+
+2. Create a binding for text
+
+![Create Text Binding](BattleTank/Saved/Screenshots/Windows/Ammo_Display_Text_Create_Binding.png)
+
+![UI Text Binding `GetRoundsLeft`](BattleTank/Saved/Screenshots/Windows/UI_Text_Binding_Get_Rounds_Left.png)
+
+[Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/65346fc7e3ae644bf934877624cde6fa3df34635)
+
+[My Project Changes]()
 
 ### Making an AutoMortar
 
