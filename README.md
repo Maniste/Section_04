@@ -2873,13 +2873,33 @@ UFUNCTION()
 
 [Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/01641a7e2889d4235a7994332193d144955ba426)
 
-[My Project Changes]()
+[My Project Changes](https://github.com/UnrealDeveloperCourse/Section_04/commit/643b0efcb82b6234dfe1b29dddaf8598b4ffa437)
 
 ## Mid-Section Quiz
 
 ### Radial Forces & Caching
 
-- **Objective**:
+- **Objective**: Apply forces on impact from projectiles
+
+- Have a look at force components that we could potentially add via Blueprint
+
+![Projectile Radial Force](BattleTank/Saved/Screenshots/Windows/Projectile_Radial_Force_Component.png)
+
+- Add the Explosion Force Component in C++ much the same way we added `LaunchBlast` and `ImpactBlast` Particle Components to the Projectile 
+
+![Explosion Force Component](BattleTank/Saved/Screenshots/Windows/Projectile_Explosion_Force_Component.png)
+
+![`AttachToComponent` Transforms Visible](BattleTank/Saved/Screenshots/Windows/Projectile_Explosion_Force_Component_AttachToComponent_Transforms.png)
+
+[Wikipedia Impulse Force](https://en.wikipedia.org/wiki/Impulse_(physics))
+
+- Impulse force is the area beneath the curve
+
+![Impulse Force Graph](BattleTank/Saved/Downloads/ImpulseForceGraph.png)
+
+[Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/44390db5d88ff4a819692fbe5ab57d6f56e69750)
+
+[My Project Changes]()
 
 ### Using GetTimerManager()
 
