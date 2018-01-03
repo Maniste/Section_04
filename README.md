@@ -2989,7 +2989,7 @@ UFUNCTION()
 
 [Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/e964687a28cc4c808079976c1d13826af3ca8c84)
 
-[My Project Changes]()
+[My Project Changes](https://github.com/UnrealDeveloperCourse/Section_04/commit/f4ba04efd310a925cfa649f347644e0f2ca6b8d0)
 
 ### The Observer Pattern
 
