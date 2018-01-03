@@ -2913,11 +2913,15 @@ UFUNCTION()
 
 [Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/cf78a29c66a0ddcd9ed1733c2aa0c7939332735e)
 
-[My Project Changes]()
+[My Project Changes](https://github.com/UnrealDeveloperCourse/Section_04/commit/c71300c5984ddbf7ae13b53d23bb8c2b82345197)
 
 ### Using TakeDamage() on Actors
 
-- **Objective**:
+- **Objective**: Start to take damage
+
+[Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/e964687a28cc4c808079976c1d13826af3ca8c84)
+
+[My Project Changes]()
 
 ### BlueprintPure & Health Bars
 
