@@ -2921,11 +2921,75 @@ UFUNCTION()
 
 [Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/e964687a28cc4c808079976c1d13826af3ca8c84)
 
-[My Project Changes]()
+[My Project Changes](https://github.com/UnrealDeveloperCourse/Section_04/commit/9d2454e0aad2f7a9a11960c20876ffe50f88bfee)
 
 ### BlueprintPure & Health Bars
 
-- **Objective**:
+- **Objective**: Blue health bars
+
+- What is BlueprintPure according to the documentation
+
+> The function does not affect the owning object in any way and can be executed in a Blueprint or Level Blueprint graph.
+
+- Create Widget Component
+
+![Create Widget Component](BattleTank/Saved/Screenshots/Windows/Widget_Component_Create.png)
+
+- Create Widget Blueprint
+
+![Create Widget Blueprint](BattleTank/Saved/Screenshots/Windows/Widget_BP_Create.png)
+
+- Create a progress bar
+
+![Create Widget Blueprint](BattleTank/Saved/Screenshots/Windows/Widget_BP_Create_ProgressBar.png)
+
+- Scale the anchor of the progress bar to fill the entire canvas
+
+- Fill the progress bar to the entire canvas by setting offsets to zero
+
+![Create Widget Blueprint](BattleTank/Saved/Screenshots/Windows/Widget_BP_Create_AnchorAt100.png)
+
+- Select the HealthBar Class in the Widget Component
+
+![Select the HealthBar Class](BattleTank/Saved/Screenshots/Windows/Widget_Component_Class.png)
+
+- Create a `GetHealthPercent` method that returns the current health percentage
+
+- Test the heath percentage is working in Blueprint
+
+![Testing `GetHealthPercent`](BattleTank/Saved/Screenshots/Windows/Widget_Component_Testing_GetHealthPercent.png)
+
+**Set the location of the widget to the location of the Tank on screen**
+
+- Create Blueprint Variable "MyTank" of type `Tank`
+
+![Widget HealthBar Create Variable](BattleTank/Saved/Screenshots/Windows/Widget_HealthBar_CreateVariable.png)
+
+![Widget HealthBar Create Variable TypeTank](BattleTank/Saved/Screenshots/Windows/Widget_HealthBar_CreateVariable_TypeTank.png)
+
+- Get Health Percent in Get Percent Binding
+
+![Widget HealthBar Event Graph GetHealthPercent](BattleTank/Saved/Screenshots/Windows/Widget_HealthBar_EventGraph_GetHealthPercent.png)
+
+- Setup Tank_BP Event Graph
+
+- Widget Component -> Get User Widget Object -> Cast to HeathBar_BP -> Set MyTank Widget
+
+![Widget HealthBar Tank_BP Set MyTank Widget](BattleTank/Saved/Screenshots/Windows/Widget_HealthBar_TankBP_SetMyTank_Widget.png)
+
+![Widget HealthBar Get Reference To Tank](BattleTank/Saved/Screenshots/Windows/Widget_HealthBar_GetReferenceToTank.png)
+
+- Collapse group and rename to `InitializeHealthBarWidget`
+
+![Widget HealthBar Tank_BP Set MyTank CollapseToFunc](BattleTank/Saved/Screenshots/Windows/Widget_HealthBar_TankBP_SetMyTank_CollapseToFunc.png)
+
+- Position and Scale the Heath Bar Widget in the Tank_BP Viewport and select Screen Space
+
+![Widget HealthBar Tank_BP Position](BattleTank/Saved/Screenshots/Windows/Widget_HealthBar_TankBP_Position.png)
+
+[Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/e964687a28cc4c808079976c1d13826af3ca8c84)
+
+[My Project Changes]()
 
 ### The Observer Pattern
 
