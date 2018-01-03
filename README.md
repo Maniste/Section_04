@@ -2845,7 +2845,9 @@ UFUNCTION()
 
 ### Introducing Particle Systems
 
-- **Objective**:
+- **Objective**: Create a readonly StarterContent Project to copy individual particle assets from. Attach a particle system to the Projectile.
+
+[Wikipedia Particle System](https://en.wikipedia.org/wiki/Particle_system)
 
 ### Particle Bounding Boxes
 
