@@ -2821,15 +2821,15 @@ UFUNCTION()
 
 - **Objective**: Reusing AimingComponent to create a stationary mortar entirely in Unreal, no coding.
 
-![Mortar BP Class](Mortar_BP_Class.png)
+![Mortar BP Class](BattleTank/Saved/Screenshots/Windows/Mortar_BP_Class.png)
 
-![Mortar BP Geo](Mortar_BP_Geo.png)
+![Mortar BP Geo](BattleTank/Saved/Screenshots/Windows/Mortar_BP_Geo.png)
 
-![Mortart BP Components](Mortar_BP_Components.png)
+![Mortart BP Components](BattleTank/Saved/Screenshots/Windows/Mortar_BP_Components.png)
 
-![Mortar Event Graph](Mortar_BP_EventGraph.png)
+![Mortar Event Graph](BattleTank/Saved/Screenshots/Windows/Mortar_BP_EventGraph.png)
 
-![Mortar Projectile BP](Mortar_BP_Projectile_BP.png)
+![Mortar Projectile BP](BattleTank/Saved/Screenshots/Windows/Mortar_BP_Projectile_BP.png)
 
 ### Using the Reference Viewer
 
@@ -2841,7 +2841,7 @@ UFUNCTION()
 
 [Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/23a580e68a61042829aefc9986feb4f1d6f8178e)
 
-[My Project Changes]()
+[My Project Changes](https://github.com/UnrealDeveloperCourse/Section_04/commit/574480f04ff6c2b078392cb2b39c25f1586c4930)
 
 ### Introducing Particle Systems
 
@@ -2851,11 +2851,29 @@ UFUNCTION()
 
 ### Particle Bounding Boxes
 
-- **Objective**:
+- **Objective**: Fixing smoke trails that disappear
 
 ### Using FAttachmentTransformRules
 
-- **Objective**:
+- **Objective**: Create Impact Blasts
+
+![Particle Systems Launch Blast](BattleTank/Saved/Screenshots/Windows/Particle_Systems_LaunchBlast.png)
+
+![Particle Systems Impact Blast](BattleTank/Saved/Screenshots/Windows/Particle_Systems_ImpactBlast.png)
+
+![Impact Blast Assign To Component](BattleTank/Saved/Screenshots/Windows/Particle_Systems_ImpactBlast_AssignToComponent.png)
+
+- `AttachTo` deprecated
+
+[AttachTo Deprecated](https://community.gamedev.tv/t/attachto-deprecated-in-4-12-and-avoiding-startercontent/15924)
+
+- A new way to attach components
+
+[4.12 Transition Guide](https://forums.unrealengine.com/development-discussion/c-gameplay-programming/84801-4-12-transition-guide?112644-4-12-Transition-Guide=)
+
+[Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/01641a7e2889d4235a7994332193d144955ba426)
+
+[My Project Changes]()
 
 ## Mid-Section Quiz
 
