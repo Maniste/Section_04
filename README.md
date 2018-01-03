@@ -2899,11 +2899,21 @@ UFUNCTION()
 
 [Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/44390db5d88ff4a819692fbe5ab57d6f56e69750)
 
-[My Project Changes]()
+[My Project Changes](https://github.com/UnrealDeveloperCourse/Section_04/commit/15cb5d65079ce15f75f313b1c9bae6bdf291b25e)
 
 ### Using GetTimerManager()
 
-- **Objective**:
+- **Objective**: Make the projectiles dissappear after a resonable time period
+
+![Projectile Destruction Schemes](BattleTank/Saved/Screenshots/Windows/Projectile_Destruction_Schemes.png)
+
+- Destroy on timer expire manages cleaning up scene objects automatically
+
+![Destroy `OnTimerExpire`](BattleTank/Saved/Screenshots/Windows/Projectile_Destroy_OnTimerExpire.png)
+
+[Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/cf78a29c66a0ddcd9ed1733c2aa0c7939332735e)
+
+[My Project Changes]()
 
 ### Using TakeDamage() on Actors
 
