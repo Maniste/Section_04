@@ -3039,11 +3039,17 @@ void DelegateMethod();  // e.g. void OnTankDeath();
 
 [Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/d1d54647c9656082fc46c779a6d50909af1ce75d)
 
-[My Project Changes]()
+[My Project Changes](https://github.com/UnrealDeveloperCourse/Section_04/commit/74571afa9bf40fe43619a1494648c52af5226347)
 
 ### Finishing Off - Part 1
 
-- **Objective**:
+- **Objective**: Apply the same OnDeath delegate to the player controller, On death, player controller: go into spectator mode, AI controller: detatch
+
+**Project Changes**
+
+[Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/80932adb8c6b793d353715c35da9993e3ace3183)
+
+[My Project Changes]()
 
 ### Finishing Off - Part 2
 
