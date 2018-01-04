@@ -3045,15 +3045,19 @@ void DelegateMethod();  // e.g. void OnTankDeath();
 
 - **Objective**: Apply the same OnDeath delegate to the player controller, On death, player controller: go into spectator mode, AI controller: detatch
 
+[DetachFromControllerPendingDestroy](https://docs.unrealengine.com/latest/INT/API/Runtime/Engine/GameFramework/APawn/DetachFromControllerPendingDestr-/index.html)
+
+[StartSpectatingOnly](https://docs.unrealengine.com/latest/INT/API/Runtime/Engine/GameFramework/APlayerController/StartSpectatingOnly/index.html)
+
 **Project Changes**
 
 [Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/80932adb8c6b793d353715c35da9993e3ace3183)
 
-[My Project Changes]()
+[My Project Changes](https://github.com/UnrealDeveloperCourse/Section_04/commit/c2516816446326332af0ef2d4fc41d7d38049d43)
 
 ### Finishing Off - Part 2
 
-- **Objective**:
+- **Objective**: Additional turret, undulate the terrain
 
 ### Section 4 Wrap-Up
 
