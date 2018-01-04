@@ -2774,6 +2774,8 @@ UFUNCTION()
 
 ![Disable AI Auto Possess](BattleTank/Saved/Screenshots/Windows/Tank_Disable_AutoPosess.png)
 
+**Project Changes**
+
 [Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/d06b8d1121c52f35f14d05afb9fcab3fd75db8cc)
 
 [My Project Changes](https://github.com/UnrealDeveloperCourse/Section_04/commit/a54b64ee547e76e400a647f7902d8c29c2d65a04)
@@ -2839,6 +2841,8 @@ UFUNCTION()
 
 - **Objective**: Getting Set Up to use particles
 
+**Project Changes**
+
 [Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/23a580e68a61042829aefc9986feb4f1d6f8178e)
 
 [My Project Changes](https://github.com/UnrealDeveloperCourse/Section_04/commit/574480f04ff6c2b078392cb2b39c25f1586c4930)
@@ -2871,6 +2875,8 @@ UFUNCTION()
 
 [4.12 Transition Guide](https://forums.unrealengine.com/development-discussion/c-gameplay-programming/84801-4-12-transition-guide?112644-4-12-Transition-Guide=)
 
+**Project Changes**
+
 [Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/01641a7e2889d4235a7994332193d144955ba426)
 
 [My Project Changes](https://github.com/UnrealDeveloperCourse/Section_04/commit/643b0efcb82b6234dfe1b29dddaf8598b4ffa437)
@@ -2897,6 +2903,8 @@ UFUNCTION()
 
 ![Impulse Force Graph](BattleTank/Saved/Downloads/ImpulseForceGraph.png)
 
+**Project Changes**
+
 [Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/44390db5d88ff4a819692fbe5ab57d6f56e69750)
 
 [My Project Changes](https://github.com/UnrealDeveloperCourse/Section_04/commit/15cb5d65079ce15f75f313b1c9bae6bdf291b25e)
@@ -2911,6 +2919,8 @@ UFUNCTION()
 
 ![Destroy `OnTimerExpire`](BattleTank/Saved/Screenshots/Windows/Projectile_Destroy_OnTimerExpire.png)
 
+**Project Changes**
+
 [Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/cf78a29c66a0ddcd9ed1733c2aa0c7939332735e)
 
 [My Project Changes](https://github.com/UnrealDeveloperCourse/Section_04/commit/c71300c5984ddbf7ae13b53d23bb8c2b82345197)
@@ -2919,6 +2929,8 @@ UFUNCTION()
 
 - **Objective**: Start to take damage
 
+**Project Changes**
+
 [Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/e964687a28cc4c808079976c1d13826af3ca8c84)
 
 [My Project Changes](https://github.com/UnrealDeveloperCourse/Section_04/commit/9d2454e0aad2f7a9a11960c20876ffe50f88bfee)
@@ -2926,6 +2938,8 @@ UFUNCTION()
 ### BlueprintPure & Health Bars
 
 - **Objective**: Blue health bars
+
+**NOTE: If blue bar disappears, remove and add `MyTank` in `HealthBar_BP` `GetPercent` Blueprint function
 
 - What is BlueprintPure according to the documentation
 
@@ -2987,13 +3001,45 @@ UFUNCTION()
 
 ![Widget HealthBar Tank_BP Position](BattleTank/Saved/Screenshots/Windows/Widget_HealthBar_TankBP_Position.png)
 
+**Project Changes**
+
 [Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/e964687a28cc4c808079976c1d13826af3ca8c84)
 
 [My Project Changes](https://github.com/UnrealDeveloperCourse/Section_04/commit/f4ba04efd310a925cfa649f347644e0f2ca6b8d0)
 
 ### The Observer Pattern
 
-- **Objective**:
+- **Objective**: Learn about Observer Pattern which is like an Event/Subscription Model. Broadcast an OnDeath.Broadcast() event on the Tank class and have the Tank Controllers subscribed to that event react accordingly.
+
+**Links**
+
+[Observer Pattern](http://gameprogrammingpatterns.com/observer.html)
+
+[Declaring Delegates](https://docs.unrealengine.com/latest/INT/Programming/UnrealArchitecture/Delegates/index.html#declaringdelegates)
+
+[Dynamic Delegates](https://docs.unrealengine.com/latest/INT/Programming/UnrealArchitecture/Delegates/Dynamic/)
+
+[DMCDs or Muli-Cast Delegates](https://docs.unrealengine.com/latest/INT/Programming/UnrealArchitecture/Delegates/Multicast/)
+
+**Steps for Setting-Up DMCDs**
+
+1. Create type: DECLARE_DYNAMIC_MULTICAST_DELEGATE(FSubjectName);
+
+2. Declare: FSubjectName OnSomethingHappened;
+
+3. Broadcast: OnSomethingHappened.BroadCast();
+
+4. Declare delegate on listener(s):
+UFUNCTION()  // Must be a UFUNCTION to get called
+void DelegateMethod();  // e.g. void OnTankDeath();
+
+5. To register: BroadcastingInstance-> OnSomethingHappened. AddUniqueDynamic(this, &AListenerClass::DelegateMethod);
+
+**Project Changes**
+
+[Ben's Project Changes](https://github.com/UnrealCourse/04_BattleTank/commit/d1d54647c9656082fc46c779a6d50909af1ce75d)
+
+[My Project Changes]()
 
 ### Finishing Off - Part 1
 
