@@ -3061,10 +3061,10 @@ void DelegateMethod();  // e.g. void OnTankDeath();
 
 ### Section 4 Wrap-Up
 
-- **Objective**:
+- **Objective**: Improve Room Escape, apply what you've learned
 
 ### Bonus - Switching Cameras
 
-- **Objective**:
+- **Objective**: Third to First person view camera switching
 
 ## End of Section Quiz
